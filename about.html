@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Nexora Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#7C3AED',
+                        background: '#FFFFFF',
+                        text: '#111827',
+                        secondary: '#6B7280',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-text">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-primary">Nexora Studio</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-text hover:text-primary transition-colors">Home</a>
+                    <a href="projects.html" class="text-text hover:text-primary transition-colors">Projects</a>
+                    <a href="about.html" class="text-primary font-medium">About</a>
+                    <a href="contact.html" class="text-text hover:text-primary transition-colors">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-text hover:text-primary">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="index.html" class="block py-2 text-text hover:text-primary">Home</a>
+                <a href="projects.html" class="block py-2 text-text hover:text-primary">Projects</a>
+                <a href="about.html" class="block py-2 text-primary font-medium">About</a>
+                <a href="contact.html" class="block py-2 text-text hover:text-primary">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="pt-20 pb-16 bg-gradient-to-br from-white to-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-text mb-6">About Nexora Studio</h1>
+                <p class="text-xl text-secondary max-w-2xl mx-auto">
+                    We're a team of passionate designers and developers creating digital solutions that make a difference.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <h2 class="text-3xl font-bold text-text mb-6">Our Story</h2>
+                    <p class="text-secondary leading-relaxed mb-4">
+                        Founded in 2026, Nexora Studio emerged from a simple belief: great design and technology should work together seamlessly to solve real problems.
+                    </p>
+                    <p class="text-secondary leading-relaxed">
+                        We've helped startups launch, businesses scale, and entrepreneurs turn their visions into reality through thoughtful digital experiences.
+                    </p>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/500x400/7C3AED/FFFFFF?text=Team+Photo" alt="Nexora Studio Team" class="w-full rounded-lg shadow-sm">
+                </div>
+            </div>
+
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-text mb-6">Our Values</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div>
+                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-text mb-2">Innovation</h3>
+                        <p class="text-secondary">We stay ahead of trends and embrace new technologies to deliver cutting-edge solutions.</p>
+                    </div>
+                    <div>
+                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-text mb-2">Collaboration</h3>
+                        <p class="text-secondary">We believe the best results come from working closely with our clients as partners.</p>
+                    </div>
+                    <div>
+                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-text mb-2">Quality</h3>
+                        <p class="text-secondary">We never compromise on quality, ensuring every project meets the highest standards.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-text mb-6">Ready to Work Together?</h2>
+                <p class="text-secondary mb-8 max-w-2xl mx-auto">
+                    Let's discuss how we can help bring your ideas to life with our expertise in design and development.
+                </p>
+                <a href="contact.html" class="inline-block bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-purple-700 transition-colors">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h3 class="text-xl font-bold mb-4">Nexora Studio</h3>
+                <p class="text-gray-400">Crafting digital experiences that matter.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

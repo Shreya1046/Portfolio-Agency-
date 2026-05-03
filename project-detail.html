@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Art Store Website - Nexora Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#7C3AED',
+                        background: '#FFFFFF',
+                        text: '#111827',
+                        secondary: '#6B7280',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-text">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-primary">Nexora Studio</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-text hover:text-primary transition-colors">Home</a>
+                    <a href="projects.html" class="text-text hover:text-primary transition-colors">Projects</a>
+                    <a href="about.html" class="text-text hover:text-primary transition-colors">About</a>
+                    <a href="contact.html" class="text-text hover:text-primary transition-colors">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-text hover:text-primary">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="index.html" class="block py-2 text-text hover:text-primary">Home</a>
+                <a href="projects.html" class="block py-2 text-text hover:text-primary">Projects</a>
+                <a href="about.html" class="block py-2 text-text hover:text-primary">About</a>
+                <a href="contact.html" class="block py-2 text-text hover:text-primary">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="pt-20 pb-16 bg-gradient-to-br from-white to-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-text mb-4">E-Art Store Website</h1>
+                <p class="text-xl text-secondary mb-6">Demo Project</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://your-demo-link-1.com" target="_blank" class="inline-block bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-purple-700 transition-colors">
+                        View Live Demo
+                    </a>
+                    <a href="https://github.com/your-repo-1" target="_blank" class="inline-block border border-primary text-primary px-6 py-3 rounded-lg font-medium hover:bg-primary hover:text-white transition-colors">
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Problem -->
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-text mb-6">The Problem</h2>
+                <p class="text-lg text-secondary leading-relaxed">
+                    Artists were selling via Instagram DMs, which was unstructured and inefficient.
+                </p>
+            </div>
+
+            <!-- Solution -->
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-text mb-6">The Solution</h2>
+                <p class="text-lg text-secondary leading-relaxed">
+                    Built a mobile-first website to showcase artwork and allow direct purchase inquiries.
+                </p>
+            </div>
+
+            <!-- Features -->
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-text mb-6">Key Features</h2>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-primary mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-secondary">Product gallery with categories</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-primary mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-secondary">WhatsApp integration</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-primary mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-secondary">Responsive design</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-primary mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-secondary">Smooth animations</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Tech Stack -->
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-text mb-6">Tech Stack</h2>
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-gray-100 text-text px-4 py-2 rounded-full text-sm font-medium">HTML</span>
+                    <span class="bg-gray-100 text-text px-4 py-2 rounded-full text-sm font-medium">Tailwind CSS</span>
+                    <span class="bg-gray-100 text-text px-4 py-2 rounded-full text-sm font-medium">JavaScript</span>
+                </div>
+            </div>
+
+            <!-- Screenshots -->
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-text mb-6">Screenshots</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <img src="https://via.placeholder.com/600x400/7C3AED/FFFFFF?text=Screenshot+1" alt="Screenshot 1" class="w-full rounded-lg shadow-sm">
+                    <img src="https://via.placeholder.com/600x400/7C3AED/FFFFFF?text=Screenshot+2" alt="Screenshot 2" class="w-full rounded-lg shadow-sm">
+                </div>
+            </div>
+
+            <!-- Outcome -->
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-text mb-6">Outcome</h2>
+                <p class="text-lg text-secondary leading-relaxed">
+                    Improved browsing experience and streamlined purchase process.
+                </p>
+            </div>
+
+            <!-- Challenges -->
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-text mb-6">Challenges</h2>
+                <p class="text-lg text-secondary leading-relaxed">
+                    Handled responsive layout issues and optimized UI for mobile.
+                </p>
+            </div>
+
+            <!-- Future Improvements -->
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-text mb-6">Future Improvements</h2>
+                <p class="text-lg text-secondary leading-relaxed">
+                    Add payment gateway and admin dashboard.
+                </p>
+            </div>
+
+            <!-- Back to Projects -->
+            <div class="text-center">
+                <a href="projects.html" class="inline-block bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-purple-700 transition-colors">
+                    ← Back to Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h3 class="text-xl font-bold mb-4">Nexora Studio</h3>
+                <p class="text-gray-400">Crafting digital experiences that matter.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
